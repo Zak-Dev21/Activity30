@@ -2,6 +2,7 @@
 #define Header_h
 
 #include <iostream>
+#include <string>
 
 using namespace std;
 
@@ -11,6 +12,10 @@ private:
 
 public:
     TextBox(string startValue = "") {
+        value = startValue;
+    }
+
+    explicit TextBox(const string& startValue) {
         value = startValue;
     }
 
